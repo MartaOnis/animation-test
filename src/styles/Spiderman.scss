@@ -1,0 +1,39 @@
+section {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/fondoazul.png');
+
+  /* Full height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  /* z-index: 2; */
+}
+.spiderman {
+  /* z-index: 2; */
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  /* filter: brightness(1.1);
+    mix-blend-mode: multiply;    For transparent bg*/
+}
+.spiderman-img {
+  height: 350px;
+}
+
+@media all and (min-width: 1200px) {
+  .parallax {
+    background-size: contain;
+  }
+  .spiderman {
+    top: 35%;
+    left: 45%;
+  }
+}
