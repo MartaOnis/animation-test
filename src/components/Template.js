@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import '../styles/Template.scss';
 const Template = (props) => {
   return (
-    <section>
+    <section className="sectionTemplate">
       <Link to={`${props.link}`} className="character-link">
         {/* <img
         className=""

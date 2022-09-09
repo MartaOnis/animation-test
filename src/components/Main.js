@@ -4,8 +4,10 @@ import '../styles/Main.scss';
 const Main = () => {
   return (
     <main className="main">
-      <Template link="spiderman" />
-      <Template link="anakin" />
+      <div className="main__container">
+        <Template link="spiderman" />
+        <Template link="anakin" />
+      </div>
     </main>
   );
 };
