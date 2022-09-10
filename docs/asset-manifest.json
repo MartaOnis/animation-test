@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.c2b132f4.css",
-    "main.js": "./static/js/main.3845875c.js",
+    "main.css": "./static/css/main.e0b295cc.css",
+    "main.js": "./static/js/main.9fd69f3d.js",
     "static/media/fondoazul.png": "./static/media/fondoazul.8892aaa3d6bbb43daa34.png",
+    "static/media/Marquette.otf": "./static/media/Marquette.bba8bd727832a70acd0c.otf",
     "static/media/Anakin.png": "./static/media/Anakin.91d921699b847eca4155.png",
     "static/media/Spiderman.png": "./static/media/Spiderman.af46d4ae22b7f6678c6d.png",
+    "static/media/AnakinTemplate.png": "./static/media/AnakinTemplate.bb8d5b2431a2b86ec995.png",
+    "static/media/SpidermanTemplate.png": "./static/media/SpidermanTemplate.16cef7376df014e2ce52.png",
     "index.html": "./index.html",
-    "main.c2b132f4.css.map": "./static/css/main.c2b132f4.css.map",
-    "main.3845875c.js.map": "./static/js/main.3845875c.js.map"
+    "main.e0b295cc.css.map": "./static/css/main.e0b295cc.css.map",
+    "main.9fd69f3d.js.map": "./static/js/main.9fd69f3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2b132f4.css",
-    "static/js/main.3845875c.js"
+    "static/css/main.e0b295cc.css",
+    "static/js/main.9fd69f3d.js"
   ]
 }
