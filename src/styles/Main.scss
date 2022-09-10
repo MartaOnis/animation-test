@@ -1,7 +1,47 @@
-.main__container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  overflow: hidden;
-  padding: 3em;
+@font-face {
+  font-family: 'Marquette';
+  src: url('/fonts/Marquette.otf') format('truetype');
+}
+@import './App';
+.main {
+  &__title {
+    font-family: 'Marquette', 'Sans';
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    @media all and (min-width: 768px) {
+      font-size: 100px;
+      margin-top: 100px;
+    }
+  }
+  &__paragraph {
+    text-align: center;
+    font-family: $font-main;
+    font-size: 32px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 3em;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+.SectionDetail-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 20px;
+  @media all and (min-width: 768px) {
+    font-size: 34px;
+    margin-left: 40px;
+  }
 }

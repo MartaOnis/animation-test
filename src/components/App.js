@@ -9,12 +9,26 @@ import Anakin from './Anakin';
 function App() {
   return (
     <>
-      <Header />
-
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/spiderman" element={<Spiderman />} />
-        <Route path="/anakin" element={<Anakin />} />
+        <Route
+          path="/spiderman"
+          element={
+            <>
+              <Header />
+              <Spiderman />
+            </>
+          }
+        />
+        <Route
+          path="/anakin"
+          element={
+            <>
+              <Header />
+              <Anakin />
+            </>
+          }
+        />
       </Routes>
     </>
   );

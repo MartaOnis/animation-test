@@ -1,31 +1,94 @@
 @import './App.scss';
 .sectionTemplate {
+  margin-top: 10px;
+  margin-bottom: 40px;
   padding: 1em;
-  font-family: $font-main;
   text-decoration: none;
   color: #000;
   background: #ffc;
   display: block;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   /* Firefox */
   -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
   /* Safari+Chrome */
   -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   /* Opera */
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
-  -webkit-transform: rotate(-6deg);
-  -o-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
+
+  @media all and (min-width: 768px) {
+    margin-top: 30px;
+    height: 260px;
+    width: 260px;
+  }
+  &__image {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    @media all and (min-width: 768px) {
+      height: 120px;
+      width: 170px;
+    }
+  }
+  &__paragraph {
+    margin-top: 10px;
+    font-family: $font-main;
+    font-size: 24px;
+    @media all and (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
 }
 .sectionTemplate:hover {
   transform: scale(1.25);
   position: relative;
   z-index: 5;
 }
+.class1 {
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  position: relative;
+  top: 5px;
+}
+.class2 {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+}
+.class3 {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
 
 .character-link {
   text-decoration: none;
   color: black;
+}
+.classhtml {
+  color: #f26837;
+  margin: 5px;
+}
+.classcss {
+  color: #006db8;
+  margin: 5px;
+}
+.classjs {
+  color: #e6c72f;
+  margin: 5px;
+}
+.hidden {
+  display: none;
 }
